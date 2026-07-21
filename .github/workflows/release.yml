@@ -51,6 +51,10 @@ jobs:
         run: |
           git show-ref --tags
 
+      - name: Generate ZIP Archive
+        run: |
+          zip -r newFVTTRPG.zip . -x ".git/*" ".github/*"
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
