@@ -34,11 +34,13 @@ jobs:
           git push origin --delete v${{ env.version }} || true
 
       - name: Delete Existing Release (if exists)
-        uses: octokit/request-action@v2
-        with:
-          route: DELETE /repos/${{ github.repository }}/releases/tags/v${{ env.version }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          RELEASE_ID=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/${{ github.repository }}/releases/tags/v${{ env.version }} | jq -r '.id')
+          if [ "$RELEASE_ID" != "null" ]; then
+            curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              https://api.github.com/repos/${{ github.repository }}/releases/$RELEASE_ID
+          fi
 
       - name: Create Git Tag
         run: |
