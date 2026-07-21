@@ -1,6 +1,6 @@
 import {registerSystemSettings} from "./settings";
 import {DND} from "./config.js";
-import {DNDActor} from "./actors/actor";
+import {DNDActor} from "./actors/actor.js";
 import {CharacterSheet} from "./actors/character-sheet.js";
 
 Hooks.once("init", async function () {

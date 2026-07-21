@@ -7,15 +7,13 @@ export class DNDActor extends Actor {
 
             data.items = [];
 
-            let caps = game.dnd.config.competences;
+            let caps = game.dnd.config.skills;
 
             if (data.type === "character") {
                 foundry.utils.mergeObject(data.items, caps, {overwrite: false});
             }
         }
-        let enti = super.create(data, options);
-
-        return enti;
+        return super.create(data, options);
     }
 
     prepareData() {
