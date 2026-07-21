@@ -26,20 +26,8 @@ jobs:
           echo "version=$VERSION" >> $GITHUB_ENV
 
       - name: Create GitHub Release
-        uses: actions/create-release@v1
+        uses: softprops/action-gh-release@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag_name: v${{ env.version }}
-          release_name: Release v${{ env.version }}
-          draft: false
-          prerelease: false
-          body: |
-            New release of the New FVTTRPG System.
-
-      - name: Upload system files
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.create-release.outputs.upload_url }}
-          asset_path: ./newFVTTRPG.zip
-          asset_name: newFVTTRPG.zip
-          asset_content_type: application/zip
+          files: ./newFVTTRPG.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
