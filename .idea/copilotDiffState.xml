@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/README.md" />
+              <option name="updatedContent" value="# New FVTTRPG System&#10;&#10;This is a new system for Foundry Virtual Tabletop. It provides the necessary framework to create and manage your own tabletop RPG system." />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/module.json">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/module.json" />
+              <option name="updatedContent" value="{&#10;  &quot;name&quot;: &quot;newFVTTRPG&quot;,&#10;  &quot;title&quot;: &quot;New FVTTRPG System&quot;,&#10;  &quot;description&quot;: &quot;A new system for Foundry Virtual Tabletop.&quot;,&#10;  &quot;version&quot;: &quot;1.0.0&quot;,&#10;  &quot;author&quot;: &quot;&quot;,&#10;  &quot;minimumCoreVersion&quot;: &quot;11&quot;,&#10;  &quot;compatibleCoreVersion&quot;: &quot;11&quot;,&#10;  &quot;system&quot;: true&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/scripts/main.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/scripts/main.js" />
+              <option name="updatedContent" value="// Main JavaScript file for the New FVTTRPG System&#10;Hooks.once('init', async function() {&#10;  console.log('Initializing New FVTTRPG System');&#10;});" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/styles/style.css">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/styles/style.css" />
+              <option name="updatedContent" value="/* Main CSS file for the New FVTTRPG System */&#10;body {&#10;  font-family: 'Arial', sans-serif;&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/system.json">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/system.json" />
+              <option name="originalContent" value="{&#10;  &quot;name&quot;: &quot;newFVTTRPG&quot;,&#10;  &quot;title&quot;: &quot;New FVTTRPG System&quot;,&#10;  &quot;description&quot;: &quot;A new system for Foundry Virtual Tabletop.&quot;,&#10;  &quot;version&quot;: &quot;1.0.0&quot;,&#10;  &quot;author&quot;: &quot;&quot;,&#10;  &quot;minimumCoreVersion&quot;: &quot;11&quot;,&#10;  &quot;compatibleCoreVersion&quot;: &quot;11&quot;,&#10;  &quot;scripts&quot;: [],&#10;  &quot;esmodules&quot;: [],&#10;  &quot;styles&quot;: [],&#10;  &quot;packs&quot;: [],&#10;  &quot;languages&quot;: [],&#10;  &quot;socket&quot;: false,&#10;  &quot;initiative&quot;: &quot;&quot;&#10;}&#10;&#10;" />
+              <option name="updatedContent" value="{&#10;  &quot;name&quot;: &quot;newFVTTRPG&quot;,&#10;  &quot;title&quot;: &quot;New FVTTRPG System&quot;,&#10;  &quot;description&quot;: &quot;A new system for Foundry Virtual Tabletop.&quot;,&#10;  &quot;version&quot;: &quot;1.0.0&quot;,&#10;  &quot;author&quot;: &quot;&quot;,&#10;  &quot;minimumCoreVersion&quot;: &quot;11&quot;,&#10;  &quot;compatibleCoreVersion&quot;: &quot;11&quot;,&#10;  &quot;scripts&quot;: [&quot;scripts/main.js&quot;],&#10;  &quot;esmodules&quot;: [],&#10;  &quot;styles&quot;: [],&#10;  &quot;packs&quot;: [],&#10;  &quot;languages&quot;: [],&#10;  &quot;socket&quot;: false,&#10;  &quot;initiative&quot;: &quot;&quot;&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/template.json">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/template.json" />
+              <option name="updatedContent" value="{&#10;  &quot;name&quot;: &quot;default&quot;,&#10;  &quot;type&quot;: &quot;character&quot;,&#10;  &quot;img&quot;: &quot;icons/svg/mystery-man.svg&quot;,&#10;  &quot;data&quot;: {}&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

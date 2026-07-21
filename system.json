@@ -4,9 +4,9 @@
   "description": "A new system for Foundry Virtual Tabletop.",
   "version": "1.0.0",
   "author": "",
-  "minimumCoreVersion": "11",
-  "compatibleCoreVersion": "11",
-  "scripts": [],
+  "minimumCoreVersion": "14",
+  "compatibleCoreVersion": "14.365",
+  "scripts": ["scripts/main.js"],
   "esmodules": [],
   "styles": [],
   "packs": [],
@@ -14,4 +14,3 @@
   "socket": false,
   "initiative": ""
 }
-
