@@ -1,4 +1,5 @@
 import {DnDActorSheet} from "./actor-sheet";
+import {System} from "../config.js";
 
 
 export class CharacterSheet extends DnDActorSheet {

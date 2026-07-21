@@ -41,5 +41,6 @@
   "DND.skills.religion": "Religion",
   "DND.skills.sleight_of_hand": "Sleight of Hand",
   "DND.skills.stealth": "Stealth",
-  "DND.skills.survival": "Survival"
+  "DND.skills.survival": "Survival",
+  "DND.SheetClassCharacter": "Default Character Sheet"
 }
