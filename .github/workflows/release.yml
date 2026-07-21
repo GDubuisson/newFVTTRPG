@@ -28,6 +28,18 @@ jobs:
           VERSION=$(jq -r '.version' system.json)
           echo "version=$VERSION" >> $GITHUB_ENV
 
+      - name: Delete Existing Tag (if exists)
+        run: |
+          git tag -d v${{ env.version }} || true
+          git push origin --delete v${{ env.version }} || true
+
+      - name: Delete Existing Release (if exists)
+        uses: octokit/request-action@v2
+        with:
+          route: DELETE /repos/${{ github.repository }}/releases/tags/v${{ env.version }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Create Git Tag
         run: |
           git tag v${{ env.version }}
