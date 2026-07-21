@@ -14,6 +14,26 @@
   "esmodules": [],
   "scripts": ["scripts/main.js"],
   "styles": [],
+  "packs": [
+    {
+      "name": "actors",
+      "label": "Actors",
+      "path": "packs/actors.db",
+      "type": "Actor"
+    },
+    {
+      "name": "items",
+      "label": "Items",
+      "path": "packs/items.db",
+      "type": "Item"
+    },
+    {
+      "name": "spells",
+      "label": "Spells",
+      "path": "packs/spells.db",
+      "type": "Item"
+    }
+  ],
   "documentTypes": {
     "Actor": {
       "character": {},
@@ -30,25 +50,5 @@
   "grid": {},
   "url": "https://github.com/GDubuisson/newFVTTRPG",
   "manifest": "https://github.com/GDubuisson/newFVTTRPG/releases/latest/download/system.json",
-  "download": "https://github.com/GDubuisson/newFVTTRPG/releases/latest/download/newFVTTRPG.zip",
-  "packs": [
-    {
-      "name": "actors",
-      "label": "Actors",
-      "path": "packs/actors.db",
-      "entity": "Actor"
-    },
-    {
-      "name": "items",
-      "label": "Items",
-      "path": "packs/items.db",
-      "entity": "Item"
-    },
-    {
-      "name": "spells",
-      "label": "Spells",
-      "path": "packs/spells.db",
-      "entity": "Item"
-    }
-  ]
+  "download": "https://github.com/GDubuisson/newFVTTRPG/releases/latest/download/newFVTTRPG.zip"
 }
