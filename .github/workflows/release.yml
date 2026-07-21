@@ -54,7 +54,9 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          files: ./newFVTTRPG.zip
+          files: |
+            ./newFVTTRPG.zip
+            ./system.json
           tag_name: v${{ env.version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
