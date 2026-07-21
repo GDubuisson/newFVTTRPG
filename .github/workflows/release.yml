@@ -1,0 +1,44 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Get version from system.json
+        id: get_version
+        run: |
+          VERSION=$(jq -r '.version' system.json)
+          echo "version=$VERSION" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        with:
+          tag_name: v${{ env.version }}
+          release_name: Release v${{ env.version }}
+          draft: false
+          prerelease: false
+          body: |
+            New release of the New FVTTRPG System.
+
+      - name: Upload system files
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
+          asset_path: ./newFVTTRPG.zip
+          asset_name: newFVTTRPG.zip
+          asset_content_type: application/zip
