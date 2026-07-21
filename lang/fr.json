@@ -1,0 +1,16 @@
+{
+  "Attributes": "Attributs",
+  "Strength": "Force",
+  "Dexterity": "Dextérité",
+  "Constitution": "Constitution",
+  "Intelligence": "Intelligence",
+  "Wisdom": "Sagesse",
+  "Charisma": "Charisme",
+  "Statistics": "Statistiques",
+  "ArmorClass": "Classe d'armure",
+  "HitPoints": "Points de vie",
+  "Speed": "Vitesse",
+  "Skills": "Compétences",
+  "Inventory": "Inventaire",
+  "Spells": "Sorts"
+}

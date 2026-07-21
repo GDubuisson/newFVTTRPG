@@ -2,7 +2,7 @@
   "id": "newFVTTRPG",
   "title": "New FVTTRPG System",
   "description": "A new system for Foundry Virtual Tabletop.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "compatibility": {
     "minimum": "14",
     "verified": "14.364",
@@ -10,9 +10,21 @@
   },
   "authors": [],
   "relationships": {},
-  "languages": [],
-  "esmodules": [],
-  "scripts": ["scripts/main.js"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    }
+  ],
+  "esmodules": [
+    "module/dnd.js"
+  ],
   "styles": [],
   "packs": [
     {
@@ -36,16 +48,9 @@
   ],
   "documentTypes": {
     "Actor": {
-      "character": {},
-      "_template": {}
+      "character": {}
     },
-    "Item": {
-      "equippableItem": {},
-      "_equippableItemTemplate": {},
-      "subTemplate": {},
-      "userInputTemplate": {},
-      "activeEffectContainer": {}
-    }
+    "Item": {}
   },
   "grid": {},
   "url": "https://github.com/GDubuisson/newFVTTRPG",

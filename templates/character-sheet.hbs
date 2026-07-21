@@ -1,0 +1,71 @@
+{{!-- character-sheet-fr.hbs --}}
+<section class="character-sheet">
+    <header>
+        <h1>{{actor.name}}</h1>
+        <h2>{{system.class}} {{system.level}}</h2>
+    </header>
+
+    {{!-- Stats Section --}}
+    <section class="stats">
+        <h3>{{localize "Statistics"}}</h3>
+        <ul>
+            <li>{{localize "ArmorClass"}} : {{numberFormat system.stats.ac decimals=0}}</li>
+            <li>{{localize "HitPoints"}} : {{numberFormat system.stats.hp decimals=0}}</li>
+            <li>{{localize "Speed"}} : {{numberFormat system.stats.speed decimals=0}}</li>
+        </ul>
+    </section>
+
+    {{!-- Abilities Section --}}
+    <section class="abilities">
+        <h3>{{localize "Abilities"}}</h3>
+        <ul>
+            {{#each abilities}}
+            <li>{{localize this}}: {{actor.system.abilities.[@key].value}} (Mod: {{actor.system.abilities.[@key].mod}})</li>
+            {{/each}}
+        </ul>
+    </section>
+
+    {{!-- Skills Section --}}
+    <section class="skills">
+        <h3>{{localize "Skills"}}</h3>
+        <ul>
+            {{#each skills}}
+            <li>{{localize this}}: {{actor.system.skills.[@key].value}} ({{#if actor.system.skills.[@key].proficient}}{{localize "Proficient"}}{{/if}})</li>
+            {{/each}}
+        </ul>
+    </section>
+
+    {{!-- Saving Throws Section --}}
+    <section class="saving-throws">
+        <h3>{{localize "Saving Throws"}}</h3>
+        <ul>
+            {{#each savingThrows}}
+            <li>{{localize this}}: {{#if actor.system.savingThrows.[@key].proficient}}{{localize "Proficient"}}{{else}}{{localize "Not Proficient"}}{{/if}}</li>
+            {{/each}}
+        </ul>
+    </section>
+
+    {{!-- Inventory Section --}}
+    <section class="inventory">
+        <h3>{{localize "Inventory"}}</h3>
+        <ul>
+            {{#each actor.items as |item|}}
+                {{#if (eq item.type "equipment")}}
+                    <li>{{item.name}} ({{item.system.quantity}})</li>
+                {{/if}}
+            {{/each}}
+        </ul>
+    </section>
+
+    {{!-- Spells Section --}}
+    <section class="spells">
+        <h3>{{localize "Spells"}}</h3>
+        <ul>
+            {{#each actor.items as |item|}}
+                {{#if (eq item.type "spell")}}
+                    <li>{{item.name}} (Niveau {{item.system.level}})</li>
+                {{/if}}
+            {{/each}}
+        </ul>
+    </section>
+</section>
