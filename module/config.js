@@ -30,6 +30,7 @@ DND.languages = {
 }
 
 DND.abilities = {
+    hp: "DND.abilities.hp",
     str: "DND.abilities.strength",
     dex: "DND.abilities.dexterity",
     con: "DND.abilities.constitution",

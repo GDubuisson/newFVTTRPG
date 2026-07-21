@@ -1,7 +1,208 @@
 {
-  "name": "default",
-  "type": "character",
-  "img": "icons/svg/mystery-man.svg",
-  "data": {}
+  "Actor": {
+    "types": [
+      "character"
+    ],
+    "templates": {
+      "stats": {
+        "stats": {
+          "str": {
+            "key": "str",
+            "label": "DND.abilities.strength",
+            "base": 10,
+            "value": 10
+          },
+          "dex": {
+            "key": "dex",
+            "label": "DND.abilities.dexterity",
+            "base": 10,
+            "value": 10
+          },
+          "con": {
+            "key": "con",
+            "label": "DND.abilities.constitution",
+            "base": 10,
+            "value": 10
+          },
+          "int": {
+            "key": "int",
+            "label": "DND.abilities.intelligence",
+            "base": 10,
+            "value": 10
+          },
+          "wis": {
+            "key": "wis",
+            "label": "DND.abilities.wisdom",
+            "base": 10,
+            "value": 10
+          },
+          "cha": {
+            "key": "cha",
+            "label": "DND.abilities.charisma",
+            "base": 10,
+            "value": 10
+          }
+        }
+      },
+      "common": {
+        "attributes": {
+          "hp": {
+            "key" : "hp",
+            "label" : "ARIA.attributes.hp",
+            "base": 10,
+            "bonus": 0,
+            "value": 10,
+            "max": 10
+          },
+          "initiative": 0
+        },
+        "alert": {
+          "type": "error",
+          "msg": ""
+        }
+      },
+      "modifiers": {
+        "str_mod": {
+          "key": "str_mod",
+          "label": "DND.abilities.modifiers.strength",
+          "value": 0
+        },
+        "dex_mod": {
+          "key": "dex_mod",
+          "label": "DND.abilities.modifiers.dexterity",
+          "value": 0
+        },
+        "con_mod": {
+          "key": "con_mod",
+          "label": "DND.abilities.modifiers.constitution",
+          "value": 0
+        },
+        "int_mod": {
+          "key": "int_mod",
+          "label": "DND.abilities.modifiers.intelligence",
+          "value": 0
+        },
+        "wis_mod": {
+          "key": "wis_mod",
+          "label": "DND.abilities.modifiers.wisdom",
+          "value": 0
+        },
+        "cha_mod": {
+          "key": "cha_mod",
+          "label": "DND.abilities.modifiers.charisma",
+          "value": 0
+        }
+      },
+      "skills": {
+        "acrobatics": {
+          "key": "acrobatics",
+          "label": "DND.skills.acrobatics",
+          "value": 0,
+          "proficient": false
+        },
+        "arcana": {
+          "key": "arcana",
+          "label": "DND.skills.arcana",
+          "value": 0,
+          "proficient": false
+        },
+        "athletics": {
+          "key": "athletics",
+          "label": "DND.skills.athletics",
+          "value": 0,
+          "proficient": false
+        },
+        "deception": {
+          "key": "deception",
+          "label": "DND.skills.deception",
+          "value": 0,
+          "proficient": false
+        },
+        "history": {
+          "key": "history",
+          "label": "DND.skills.history",
+          "value": 0,
+          "proficient": false
+        },
+        "insight": {
+          "key": "insight",
+          "label": "DND.skills.insight",
+          "value": 0,
+          "proficient": false
+        },
+        "intimidation": {
+          "key": "intimidation",
+          "label": "DND.skills.intimidation",
+          "value": 0,
+          "proficient": false
+        },
+        "investigation": {
+          "key": "investigation",
+          "label": "DND.skills.investigation",
+          "value": 0,
+          "proficient": false
+        },
+        "medicine": {
+          "key": "medicine",
+          "label": "DND.skills.medicine",
+          "value": 0,
+          "proficient": false
+        },
+        "nature": {
+          "key": "nature",
+          "label": "DND.skills.nature",
+          "value": 0,
+          "proficient": false
+        },
+        "perception": {
+          "key": "perception",
+          "label": "DND.skills.perception",
+          "value": 0,
+          "proficient": false
+        },
+        "performance": {
+          "key": "performance",
+          "label": "DND.skills.performance",
+          "value": 0,
+          "proficient": false
+        },
+        "persuasion": {
+          "key": "persuasion",
+          "label": "DND.skills.persuasion",
+          "value": 0,
+          "proficient": false
+        },
+        "religion": {
+          "key": "religion",
+          "label": "DND.skills.religion",
+          "value": 0,
+          "proficient": false
+        },
+        "sleight_of_hand": {
+          "key": "sleight_of_hand",
+          "label": "DND.skills.sleight_of_hand",
+          "value": 0,
+          "proficient": false
+        },
+        "stealth": {
+          "key": "stealth",
+          "label": "DND.skills.stealth",
+          "value": 0,
+          "proficient": false
+        },
+        "survival": {
+          "key": "survival",
+          "label": "DND.skills.survival",
+          "value": 0,
+          "proficient": false
+        }
+      }
+    },
+    "character": {
+      "templates": [
+        "abilities",
+        "common"
+      ]
+    }
+  }
 }
-

@@ -17,10 +17,10 @@
 
     {{!-- Abilities Section --}}
     <section class="abilities">
-        <h3>{{localize "Abilities"}}</h3>
+        <h3>{{localize "Attributes"}}</h3>
         <ul>
-            {{#each abilities}}
-            <li>{{localize this}}: {{actor.system.abilities.[@key].value}} (Mod: {{actor.system.abilities.[@key].mod}})</li>
+            {{#each actor.system.abilities as |value key|}}
+            <li>{{localize (concat "DND.abilities." key)}}: {{value.value}} ({{localize (concat "DND.abilities.modifiers." key)}}: {{value.mod}})</li>
             {{/each}}
         </ul>
     </section>
@@ -29,8 +29,8 @@
     <section class="skills">
         <h3>{{localize "Skills"}}</h3>
         <ul>
-            {{#each skills}}
-            <li>{{localize this}}: {{actor.system.skills.[@key].value}} ({{#if actor.system.skills.[@key].proficient}}{{localize "Proficient"}}{{/if}})</li>
+            {{#each actor.system.skills as |value key|}}
+            <li>{{localize (concat "DND.skills." key)}}: {{value.value}} {{#if value.proficient}}({{localize "Proficient"}}){{/if}}</li>
             {{/each}}
         </ul>
     </section>
