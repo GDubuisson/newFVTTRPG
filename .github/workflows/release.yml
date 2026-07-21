@@ -25,6 +25,11 @@ jobs:
           VERSION=$(jq -r '.version' system.json)
           echo "version=$VERSION" >> $GITHUB_ENV
 
+      - name: Create Git Tag
+        run: |
+          git tag v${{ env.version }}
+          git push origin v${{ env.version }}
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
