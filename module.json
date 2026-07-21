@@ -1,0 +1,11 @@
+{
+  "name": "newFVTTRPG",
+  "title": "New FVTTRPG System",
+  "description": "A new system for Foundry Virtual Tabletop.",
+  "version": "1.0.0",
+  "author": "",
+  "minimumCoreVersion": "11",
+  "compatibleCoreVersion": "11",
+  "system": true
+}
+
