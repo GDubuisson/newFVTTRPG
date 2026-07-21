@@ -1,20 +1,34 @@
 {
-  "name": "newFVTTRPG",
+  "id": "newFVTTRPG",
   "title": "New FVTTRPG System",
   "description": "A new system for Foundry Virtual Tabletop.",
   "version": "1.0.0",
-  "author": "",
-  "minimumCoreVersion": "14",
-  "compatibleCoreVersion": "14.365",
-  "scripts": ["scripts/main.js"],
-  "esmodules": [],
-  "styles": [],
-  "packs": [],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.364",
+    "maximum": "14"
+  },
+  "authors": [],
+  "relationships": {},
   "languages": [],
-  "socket": false,
-  "initiative": "",
+  "esmodules": [],
+  "scripts": ["scripts/main.js"],
+  "styles": [],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "_template": {}
+    },
+    "Item": {
+      "equippableItem": {},
+      "_equippableItemTemplate": {},
+      "subTemplate": {},
+      "userInputTemplate": {},
+      "activeEffectContainer": {}
+    }
+  },
+  "grid": {},
   "url": "https://github.com/GDubuisson/newFVTTRPG",
   "manifest": "https://github.com/GDubuisson/newFVTTRPG/releases/latest/download/system.json",
-  "download": "https://github.com/GDubuisson/newFVTTRPG/releases/latest/download/newFVTTRPG.zip",
-  "id": "newFVTTRPG"
+  "download": "https://github.com/GDubuisson/newFVTTRPG/releases/latest/download/newFVTTRPG.zip"
 }
