@@ -48,13 +48,26 @@
         "attributes": {
           "hp": {
             "key" : "hp",
-            "label" : "ARIA.attributes.hp",
+            "label" : "DND.stats.hp",
             "base": 10,
             "bonus": 0,
             "value": 10,
             "max": 10
           },
-          "initiative": 0
+          "ac": {
+            "key" : "ac",
+            "label" : "DND.stats.ac",
+            "base": 10,
+            "bonus": 0,
+            "value": 10
+          },
+          "initiative": {
+            "key" : "initiative",
+            "label" : "DND.stats.initiative",
+            "base": 0,
+            "bonus": 0,
+            "value": 0
+          }
         },
         "alert": {
           "type": "error",
@@ -200,7 +213,6 @@
     },
     "character": {
       "templates": [
-        "abilities",
         "common"
       ]
     }

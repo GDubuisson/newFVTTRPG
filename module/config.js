@@ -29,8 +29,14 @@ DND.languages = {
     "azharan": "DND.languages.azharan"
 }
 
+DND.stats = {
+    hp: "DND.stats.hp",
+    ac: "DND.stats.ac",
+    speed: "DND.stats.speed",
+    initiative: "DND.stats.initiative"
+}
+
 DND.abilities = {
-    hp: "DND.abilities.hp",
     str: "DND.abilities.strength",
     dex: "DND.abilities.dexterity",
     con: "DND.abilities.constitution",

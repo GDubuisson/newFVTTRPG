@@ -1,52 +1,52 @@
 {{!-- character-sheet-fr.hbs --}}
-<section class="character-sheet">
+<div class="character-sheet">
     <header>
         <h1>{{actor.name}}</h1>
         <h2>{{system.class}} {{system.level}}</h2>
     </header>
 
     {{!-- Stats Section --}}
-    <section class="stats">
+    <div class="stats">
         <h3>{{localize "Statistics"}}</h3>
         <ul>
             <li>{{localize "ArmorClass"}} : {{numberFormat system.stats.ac decimals=0}}</li>
             <li>{{localize "HitPoints"}} : {{numberFormat system.stats.hp decimals=0}}</li>
             <li>{{localize "Speed"}} : {{numberFormat system.stats.speed decimals=0}}</li>
         </ul>
-    </section>
+    </div>
 
     {{!-- Abilities Section --}}
-    <section class="abilities">
+    <div class="abilities">
         <h3>{{localize "Attributes"}}</h3>
         <ul>
             {{#each actor.system.abilities as |value key|}}
             <li>{{localize (concat "DND.abilities." key)}}: {{value.value}} ({{localize (concat "DND.abilities.modifiers." key)}}: {{value.mod}})</li>
             {{/each}}
         </ul>
-    </section>
+    </div>
 
     {{!-- Skills Section --}}
-    <section class="skills">
+    <div class="skills">
         <h3>{{localize "Skills"}}</h3>
         <ul>
             {{#each actor.system.skills as |value key|}}
             <li>{{localize (concat "DND.skills." key)}}: {{value.value}} {{#if value.proficient}}({{localize "Proficient"}}){{/if}}</li>
             {{/each}}
         </ul>
-    </section>
+    </div>
 
     {{!-- Saving Throws Section --}}
-    <section class="saving-throws">
+    <div class="saving-throws">
         <h3>{{localize "Saving Throws"}}</h3>
         <ul>
             {{#each savingThrows}}
             <li>{{localize this}}: {{#if actor.system.savingThrows.[@key].proficient}}{{localize "Proficient"}}{{else}}{{localize "Not Proficient"}}{{/if}}</li>
             {{/each}}
         </ul>
-    </section>
+    </div>
 
     {{!-- Inventory Section --}}
-    <section class="inventory">
+    <div class="inventory">
         <h3>{{localize "Inventory"}}</h3>
         <ul>
             {{#each actor.items as |item|}}
@@ -55,10 +55,10 @@
                 {{/if}}
             {{/each}}
         </ul>
-    </section>
+    </div>
 
     {{!-- Spells Section --}}
-    <section class="spells">
+    <div class="spells">
         <h3>{{localize "Spells"}}</h3>
         <ul>
             {{#each actor.items as |item|}}
@@ -67,5 +67,5 @@
                 {{/if}}
             {{/each}}
         </ul>
-    </section>
-</section>
+    </div>
+</div>

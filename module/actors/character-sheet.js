@@ -3,9 +3,10 @@ import {DnDActorSheet} from "./actor-sheet";
 
 export class CharacterSheet extends DnDActorSheet {
 
+    /** @override */
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["aria", "sheet", "actor", "character"],
+            classes: ["character"],
             template: System.templatesPath + "/actors/character/character-sheet.hbs",
             width: 910,
             height: 920,
