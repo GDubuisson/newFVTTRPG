@@ -33,9 +33,17 @@ jobs:
           git tag v${{ env.version }}
           git push origin v${{ env.version }}
 
+      - name: Debug Git Tag
+        run: |
+          git show-ref --tags
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           files: ./newFVTTRPG.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Allow Node.js 20 (Temporary)
+        env:
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
