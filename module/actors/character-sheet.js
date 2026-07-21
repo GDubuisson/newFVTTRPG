@@ -8,7 +8,7 @@ export class CharacterSheet extends DnDActorSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
             classes: ["character"],
-            template: System.templatesPath + "/actors/character/character-sheet.hbs",
+            template: System.templatesPath + "/actors/character-sheet.hbs",
             width: 910,
             height: 920,
             tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "stats"}],
