@@ -4,8 +4,7 @@
   "description": "A new system for Foundry Virtual Tabletop.",
   "version": "1.0.0",
   "author": "",
-  "minimumCoreVersion": "11",
-  "compatibleCoreVersion": "11",
+  "minimumCoreVersion": "14",
+  "compatibleCoreVersion": "14.365",
   "system": true
 }
-

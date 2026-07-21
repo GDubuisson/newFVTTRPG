@@ -12,5 +12,8 @@
   "packs": [],
   "languages": [],
   "socket": false,
-  "initiative": ""
+  "initiative": "",
+  "url": "https://github.com/GDubuisson/newFVTTRPG",
+  "manifest": "https://github.com/GDubuisson/newFVTTRPG/releases/latest/download/system.json",
+  "download": "https://github.com/GDubuisson/newFVTTRPG/releases/latest/download/newFVTTRPG.zip"
 }
