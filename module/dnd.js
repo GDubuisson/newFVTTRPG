@@ -26,7 +26,7 @@ Hooks.once("init", async function () {
         config: DND
     }
 
-    Actors.unregisteredSheet("core", ActorSheet);
+    Actors.unregisterSheet("core", ActorSheetV2);
 
     console.info("DND | Standard sheets unregistered");
 

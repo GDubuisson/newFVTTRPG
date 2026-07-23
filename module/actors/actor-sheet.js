@@ -1,4 +1,4 @@
-export class DnDActorSheet extends ActorSheet {
+export class DnDActorSheet extends ActorSheetV2 {
 
     /** @override */
     activateListeners(html) {
