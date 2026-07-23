@@ -7,6 +7,12 @@ Hooks.once('init', async function() {
   CONFIG.Item.documentClass = DnDItem;
 });
 
+// Enregistrement de la feuille de personnage pour les acteurs de type "character"
+Actors.registerSheet("dnd", CharacterSheet, {
+  types: ["character"],
+  makeDefault: true
+});
+
 class DnDActor extends Actor {
   prepareData() {
     super.prepareData();

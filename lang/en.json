@@ -42,5 +42,10 @@
   "DND.skills.sleight_of_hand": "Sleight of Hand",
   "DND.skills.stealth": "Stealth",
   "DND.skills.survival": "Survival",
-  "DND.SheetClassCharacter": "Default Character Sheet"
+  "DND.SheetClassCharacter": "Default Character Sheet",
+  "DND.skills.arcana.label": "Arcana",
+  "DND.skills.athletics.label": "Athletics",
+  "DND.skills.deception.label": "Deception",
+  "DND.skills.history.label": "History",
+  "DND.skills.insight.label": "Insight"
 }

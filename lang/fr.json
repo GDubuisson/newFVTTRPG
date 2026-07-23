@@ -42,5 +42,10 @@
   "DND.skills.sleight_of_hand": "Escamotage",
   "DND.skills.stealth": "Discrétion",
   "DND.skills.survival": "Survie",
-  "DND.SheetClassCharacter": "Feuille de personnage par défaut"
+  "DND.SheetClassCharacter": "Feuille de personnage par défaut",
+  "DND.skills.arcana.label": "Arcanes",
+  "DND.skills.athletics.label": "Athlétisme",
+  "DND.skills.deception.label": "Tromperie",
+  "DND.skills.history.label": "Histoire",
+  "DND.skills.insight.label": "Perspicacité"
 }
