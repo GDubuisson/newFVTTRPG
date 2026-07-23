@@ -6,13 +6,16 @@
   "Intelligence": "Intelligence",
   "Wisdom": "Wisdom",
   "Charisma": "Charisma",
+
   "Statistics": "Statistics",
   "ArmorClass": "Armor Class",
   "HitPoints": "Hit Points",
   "Speed": "Speed",
+
   "Skills": "Skills",
   "Inventory": "Inventory",
   "Spells": "Spells",
+
   "DND.abilities.strength": "Strength",
   "DND.abilities.dexterity": "Dexterity",
   "DND.abilities.constitution": "Constitution",
@@ -25,27 +28,26 @@
   "DND.abilities.modifiers.intelligence": "Intelligence Modifier",
   "DND.abilities.modifiers.wisdom": "Wisdom Modifier",
   "DND.abilities.modifiers.charisma": "Charisma Modifier",
-  "DND.skills.acrobatics": "Acrobatics",
-  "DND.skills.arcana": "Arcana",
-  "DND.skills.athletics": "Athletics",
-  "DND.skills.deception": "Deception",
-  "DND.skills.history": "History",
-  "DND.skills.insight": "Insight",
-  "DND.skills.intimidation": "Intimidation",
-  "DND.skills.investigation": "Investigation",
-  "DND.skills.medicine": "Medicine",
-  "DND.skills.nature": "Nature",
-  "DND.skills.perception": "Perception",
-  "DND.skills.performance": "Performance",
-  "DND.skills.persuasion": "Persuasion",
-  "DND.skills.religion": "Religion",
-  "DND.skills.sleight_of_hand": "Sleight of Hand",
-  "DND.skills.stealth": "Stealth",
-  "DND.skills.survival": "Survival",
-  "DND.SheetClassCharacter": "Default Character Sheet",
+
+
+  "DND.skills.acrobatics.label": "Acrobatics",
   "DND.skills.arcana.label": "Arcana",
   "DND.skills.athletics.label": "Athletics",
   "DND.skills.deception.label": "Deception",
   "DND.skills.history.label": "History",
-  "DND.skills.insight.label": "Insight"
+  "DND.skills.insight.label": "Insight",
+  "DND.skills.intimidation": "Intimidation",
+  "DND.skills.investigation": "Investigation",
+  "DND.skills.medicine.label": "Medicine",
+  "DND.skills.nature.label": "Nature",
+  "DND.skills.perception.label": "Perception",
+  "DND.skills.performance.label": "Performance",
+  "DND.skills.persuasion.label": "Persuasion",
+  "DND.skills.religion.label": "Religion",
+  "DND.skills.sleight_of_hand.label": "Sleight of Hand",
+  "DND.skills.stealth.label": "Stealth",
+  "DND.skills.survival.label": "Survival",
+
+
+  "DND.SheetClassCharacter": "Default Character Sheet"
 }
