@@ -22,15 +22,15 @@ Hooks.once("init", async function () {
 
     game.dnd = {
         skin: "default",
-        macros: Macros,
+        macros: foundry.applications.sheets.ActorSheetV2,
         config: DND
     }
 
-    Actors.unregisterSheet("core", foundry.applications.sheets.ActorSheetV2);
+    foundry.documents.collections.Actors.unregisterSheet("core", foundry.applications.sheets.ActorSheetV2);
 
     console.info("DND | Standard sheets unregistered");
 
-    Actors.registerSheet("dnd", CharacterSheet, {
+    foundry.documents.collections.Actors.registerSheet("dnd", CharacterSheet, {
         types: ["character"],
         makeDefault: true,
         label: "DND.SheetClassCharacter"
