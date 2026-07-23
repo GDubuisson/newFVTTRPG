@@ -1,4 +1,4 @@
-import {DnDActorSheet} from "./actor-sheet";
+import {DnDActorSheet} from "./actor-sheet.js";
 import {System} from "../config.js";
 
 
