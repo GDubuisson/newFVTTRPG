@@ -1,4 +1,4 @@
-import {registerSystemSettings} from "./settings";
+import {registerSystemSettings} from "./settings.js";
 import {DND} from "./config.js";
 import {DNDActor} from "./actors/actor.js";
 import {CharacterSheet} from "./actors/character-sheet.js";
