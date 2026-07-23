@@ -1,4 +1,4 @@
-export class DnDActorSheet extends foundry.applications.sheets.ActorSheetV2 {
+export class DnDActorSheet extends ActorSheet {
 
     /** @override */
     activateListeners(html) {

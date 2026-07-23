@@ -22,11 +22,11 @@ Hooks.once("init", async function () {
 
     game.dnd = {
         skin: "default",
-        macros: foundry.applications.sheets.ActorSheetV2,
+        macros: ActorSheet,
         config: DND
     }
 
-    foundry.documents.collections.Actors.unregisterSheet("core", foundry.applications.sheets.ActorSheetV2);
+    foundry.documents.collections.Actors.unregisterSheet("core", ActorSheet);
 
     console.info("DND | Standard sheets unregistered");
 
