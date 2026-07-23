@@ -30,7 +30,7 @@ Hooks.once("init", async function () {
 
     console.info("DND | Standard sheets unregistered");
 
-    foundry.documents.collections.Actors.registerSheet("dnd", CharacterSheet, {
+    foundry.documents.collections.Actors.registerSheet("newFVTTRPG", CharacterSheet, {
         types: ["character"],
         makeDefault: true,
         label: "DND.SheetClassCharacter"

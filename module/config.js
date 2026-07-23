@@ -2,7 +2,7 @@ export const System = {};
 
 System.label = "DND";
 System.abbrev = "DND VTT";
-System.name = "dnd";
+System.name = "newFVTTRPG";
 System.rootPath = "/systems/" + System.name;
 System.dataPath = System.rootPath + "/_data";
 System.templatesPath = System.rootPath + "/templates";
