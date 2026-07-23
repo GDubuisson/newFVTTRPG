@@ -23,7 +23,8 @@
     }
   ],
   "esmodules": [
-    "module/dnd.js"
+    "module/dnd.js",
+    "module/settings.js"
   ],
   "styles": [],
   "packs": [
