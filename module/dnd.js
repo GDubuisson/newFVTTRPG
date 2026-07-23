@@ -26,7 +26,7 @@ Hooks.once("init", async function () {
         config: DND
     }
 
-    Actors.unregisterSheet("core", ActorSheetV2);
+    Actors.unregisterSheet("core", foundry.applications.sheets.ActorSheetV2);
 
     console.info("DND | Standard sheets unregistered");
 
